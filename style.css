@@ -1,0 +1,40 @@
+:root {
+  --cor-fundo: #0B0C10;        /* Grafite profundo, quase preto (estilo industrial) */
+  --cor-principal: #1F2833;    /* Cinza escuro azulado com bastante presença */
+  --cor-secundaria: #C5C6C7;   /* Cinza claro metálico para detalhes */
+  --cor-destaque: #66FCF1;     /* Azul ciano neon elétrico e super brilhante */
+  --cor-texto: #45A29E;        /* Azul esverdeado escuro (teal) para um contraste moderno */
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte mais limpa */
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 4px;
+  border-left: 5px solid var(--cor-destaque); /* Detalhe lateral em neon */
+}
+
+h1 {
+  color: var(--cor-destaque);
+  text-transform: uppercase;   /* Título em caixa alta para mudar a personalidade */
+  letter-spacing: 2px;         /* Letras mais espaçadas */
+}
+button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
