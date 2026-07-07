@@ -4,43 +4,48 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 //acima criação das constantes JS dos elementos HTML
-const perguntas = [
+
     {
-        enunciado: "A guitarra elétrica possui diversas partes fundamentais que definem a sua afinação, timbre e tocabilidade. Qual é a função principal das tarraxas, peças localizadas no headstock (mão) do instrumento?: [
-            {
-                texto: "Controlar a tensão das cordas, permitindo afinar o instrumento adequadamente.",
-                afirmacao: "Controlar a tensão das cordas, permitindo afinar o instrumento adequadamente. "
-            },
-            {
-                texto: "Captar a vibração mecânica das cordas e transformá-la em sinal elétrico.",
-                afirmacao: " Essa definição está incorreta para as tarraxas. A peça responsável por captar o som e gerar o sinal elétrico é o captador."
-            }
-        ]
-    },
-    {
-        enunciado: " O posicionamento correto da mão e dos dedos no braço da guitarra é crucial para evitar lesões e garantir fluidez. Segundo grandes mestres, qual deve ser o papel e a posição ideal do polegar da mão esquerda (para destros)?",
+        enunciado: "O que melhor define o papel do Sol no nosso sistema?",
         alternativas: [
             {
-                texto: "icar totalmente escondido e apoiado na parte de trás do braço, servindo de apoio para os outros dedos."
+                texto: "Sua fusão nuclear, que gera luz e vida",
+                afirmacao: "Entendendo o Sol como motor de vida, "
             },
             {
-                texto: "Excelente resposta! Manter o polegar relaxado e apoiado atrás do braço garante mais agilidade e evita tensões musculares."
+                texto: "Sua gravidade, que estabiliza os planetas.",
+                afirmacao: "Vendo o Sol como a grande âncora gravitacional,"
             }
         ]
     },
+
     {
-        enunciado: "Na teoria musical aplicada à guitarra, o campo harmônico é um conceito fundamental para a criação de melodias e acompanhamentos. O que é exatamente o Campo Harmônico?: [
+        enunciado: "O que melhor define o papel do Sol no nosso sistema?",
+        alternativas: [
             {
-                texto: "Uma linha horizontal de notas tocadas sucessivamente, representando uma única melodia.
-                afirmacao: "Essa é a definição de escala. O campo harmônico, por outro lado, é uma estrutura vertical onde as notas são tocadas juntas para formar acordes."
+                texto: "Sua fusão nuclear, que gera luz e vida",
+                afirmacao: "Entendendo o Sol como motor de vida, "
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Sua gravidade, que estabiliza os planetas.",
+                afirmacao: "Vendo o Sol como a grande âncora gravitacional,"
             }
         ]
-    }
-    
+    },
+
+    {
+        enunciado: "O que melhor define o papel do Sol no nosso sistema?",
+        alternativas: [
+            {
+                texto: "Sua fusão nuclear, que gera luz e vida",
+                afirmacao: "Entendendo o Sol como motor de vida, "
+            },
+            {
+                texto: "Sua gravidade, que estabiliza os planetas.",
+                afirmacao: "Vendo o Sol como a grande âncora gravitacional,"
+             }//fechamento do objeto do texto e afirmação da lista de alternativas
+        ]//fechamento da lista de alternativas
+    },//fechamento do objeto com enunciado e lista de alternativas da lista de perguntas 
     
 let atual = 0; //variavel do inicio da lista de perguntas
 let perguntaAtual; //variavel correspondente a pergunta atual selecionada
