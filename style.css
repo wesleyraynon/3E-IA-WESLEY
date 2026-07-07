@@ -7,43 +7,54 @@
 }
 
 body {
-  background-color: var(--cor-fundo);
+  /* Degradê aplicando suas variáveis */
+  background-image: linear-gradient(135deg, var(--cor-fundo) 0%, var(--cor-principal) 100%);
+  background-attachment: fixed;
+  
   color: var(--cor-texto);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Alterado para uma família de fontes mais moderna e limpa */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; 
 }
 
 .caixa-principal {
   background-color: var(--cor-principal);
   width: 90%;
-  max-width: 600px; /* Adicionado para não esticar demais em telas grandes */
+  max-width: 600px; 
   text-align: center;
-  padding: 30px;
-  border-radius: 8px; /* Bordas levemente mais suaves combinam muito com azul */
+  padding: 40px 30px; /* Aumentado levemente o espaçamento vertical */
+  border-radius: 12px; /* Bordas um pouco mais arredondadas para combinar com as novas letras */
   border-left: 5px solid var(--cor-destaque); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adicionado uma sombra sutil para destacar do fundo */
 }
 
 h1 {
   color: var(--cor-destaque);
   text-transform: uppercase;   
-  letter-spacing: 2px;         
+  letter-spacing: 3px; /* Letras do título levemente mais afastadas para um visual premium */
+  margin-top: 0;
+  font-size: 2rem;
 }
 
 button {
   background-color: var(--cor-destaque);
-  color: var(--cor-fundo); /* Texto escuro no botão claro para dar leitura */
-  font-weight: bold;
+  color: var(--cor-fundo); 
+  font-family: inherit; /* Garante que o botão use a mesma fonte nova do corpo */
+  font-weight: 700; /* Letra do botão um pouco mais espessa/negrito */
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 14px 28px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-  background-color: #90e0ef; /* Azul ainda mais claro e brilhante no hover */
-  transform: translateY(-2px); /* Efeito sutil de flutuação */
+  background-color: #90e0ef; 
+  transform: translateY(-2px); 
+  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4); /* Brilho suave no botão ao passar o mouse */
 }
