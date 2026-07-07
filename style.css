@@ -1,9 +1,9 @@
 :root {
-  --cor-fundo: #0B0C10;        /* Grafite profundo, quase preto (estilo industrial) */
-  --cor-principal: #1F2833;    /* Cinza escuro azulado com bastante presença */
-  --cor-secundaria: #C5C6C7;   /* Cinza claro metálico para detalhes */
-  --cor-destaque: #66FCF1;     /* Azul ciano neon elétrico e super brilhante */
-  --cor-texto: #45A29E;        /* Azul esverdeado escuro (teal) para um contraste moderno */
+  --cor-fundo: #0a1128;        /* Azul noite profundo (fundo escuro e sofisticado) */
+  --cor-principal: #1c2541;    /* Azul marinho fechado para a caixa principal */
+  --cor-secundaria: #5bc0be;   /* Azul piscina/ciano para detalhes secundários */
+  --cor-destaque: #00b4d8;     /* Azul celeste vivo e elétrico para títulos e destaques */
+  --cor-texto: #e2eafc;        /* Azul gelo super claro (excelente contraste para leitura) */
 }
 
 body {
@@ -13,28 +13,37 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte mais limpa */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .caixa-principal {
   background-color: var(--cor-principal);
   width: 90%;
+  max-width: 600px; /* Adicionado para não esticar demais em telas grandes */
   text-align: center;
   padding: 30px;
-  border-radius: 4px;
-  border-left: 5px solid var(--cor-destaque); /* Detalhe lateral em neon */
+  border-radius: 8px; /* Bordas levemente mais suaves combinam muito com azul */
+  border-left: 5px solid var(--cor-destaque); 
 }
 
 h1 {
   color: var(--cor-destaque);
-  text-transform: uppercase;   /* Título em caixa alta para mudar a personalidade */
-  letter-spacing: 2px;         /* Letras mais espaçadas */
+  text-transform: uppercase;   
+  letter-spacing: 2px;         
 }
+
 button {
-  background-color: var(--cor-principal);
-  color: var(--cor-destaque);
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo); /* Texto escuro no botão claro para dar leitura */
+  font-weight: bold;
   border: none;
-  border-radius: 15px;
-  padding: 15px;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #90e0ef; /* Azul ainda mais claro e brilhante no hover */
+  transform: translateY(-2px); /* Efeito sutil de flutuação */
 }
